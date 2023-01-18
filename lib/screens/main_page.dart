@@ -9,15 +9,17 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [ChangeThemeButtonWidget()],
-        title: Text('Hello'),
+        actions: const [
+          ChangeThemeButtonWidget(),
+        ],
+        title: const Text('Hello'),
       ),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+            children: const [
               Text("Hello"),
               SizedBox(
                 height: 10,
